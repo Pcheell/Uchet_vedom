@@ -1,0 +1,34 @@
+﻿<Page x:Class="Uchet_vedom.Pages.UchitelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Uchet_vedom.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UchitelPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Background="White" Padding="20" Grid.Column="0" Grid.RowSpan="2" CornerRadius="20">
+            <StackPanel>
+                <TextBlock Text="Таблицы" FontSize="24" FontWeight="Bold" Margin="0 5 0 20"></TextBlock>
+                <Button Name="Uchenik" Click="Uchenik_Click" Margin="0 5" Background="#FFF4F4F4" Height="50" Foreground="Black" BorderBrush="#00000000" FontWeight="Bold" FontSize="14" Content="Ученик" />
+                <Button Name="Roditeli" Click="Roditeli_Click" Margin="0 5" Background="#FFF4F4F4" Height="50" Foreground="Black" BorderBrush="#00000000" FontWeight="Bold" FontSize="14" Content="Родители"/>
+                <Button Name="Vedom" Click="Vedom_Click" Margin="0 5" Background="#FFF4F4F4" Height="50" Foreground="Black" BorderBrush="#00000000" FontWeight="Bold" FontSize="14" Content="Ведомость"/>
+                <Button Name="Posech" Click="Posech_Click" Margin="0 5" Background="#FFF4F4F4" Height="50" Foreground="Black" BorderBrush="#00000000" FontWeight="Bold" FontSize="14" Content="Посещаемость"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
+

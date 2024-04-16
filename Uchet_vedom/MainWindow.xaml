@@ -1,0 +1,35 @@
+﻿<Window x:Class="Uchet_vedom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uchet_vedom"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="C:\Users\Elena\Desktop\Praktik\school1.jpg" Grid.ColumnSpan="3" Margin="-19,-32,-19,-32" Grid.RowSpan="3" Opacity="0.2" />
+
+
+        <Frame NavigationUIVisibility="Hidden" Name="MyFrame" Grid.Row="1" Grid.ColumnSpan="3" ></Frame>
+
+        <StackPanel Name="SmallHeaderStackPanel">
+            <Button Name="Close" Click="Close_Click" Background="#FF736ECE" Height="25" Foreground="White" FontWeight="Bold" FontSize="14" Width="300">Выход
+            </Button>
+            <Button Name="BuckButton" Click="BuckButton_Click"  Background="#FF736ECE" Height="30" Foreground="White" FontWeight="Bold" FontSize="14" Width="300">Назад
+            </Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>
